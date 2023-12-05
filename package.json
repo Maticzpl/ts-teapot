@@ -1,0 +1,23 @@
+{
+  "name": "projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "run": "npx tsc & npx tsc --project ./tsconfig.electron.json && electron .",
+    "watch": "concurrently --kill-others \"npx tsc --watch\" \"npx tsc --watch --project ./tsconfig.electron.json\" \"start electron .\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "concurrently": "^8.2.2",
+    "electron": "^27.0.3",
+    "mathjs": "^12.1.0",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2"
+  }
+}
